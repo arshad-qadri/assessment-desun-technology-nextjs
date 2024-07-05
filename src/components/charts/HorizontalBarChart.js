@@ -70,15 +70,12 @@ const HorizontalBarChart = () => {
   };
   return (
     <div>
-      <div id="chart">
-        <ReactApexChart
-          options={options}
-          series={series}
-          type="bar"
-          height={200}
-        />
-      </div>
-      <div id="html-dist"></div>
+      <ReactApexChart
+        options={options}
+        series={series}
+        type="bar"
+        height={200}
+      />
     </div>
   );
 };

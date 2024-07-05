@@ -67,7 +67,7 @@ const TransferDetailsTable = () => {
       textColor: "text-[#fa6140]",
     },
   ];
-  const thCommonClass = "py-4 px-1";
+  const thCommonClass = "py-2 px-1";
   return (
     <div className="w-full">
       <table className="w-full">
@@ -76,7 +76,7 @@ const TransferDetailsTable = () => {
             {headres.map((head, index) => (
               <th
                 key={index}
-                className="py-5 px-1 text-sm text-gray-600 font-semibold"
+                className="py-5 px-1 text-sm text-gray-600 font-semibold uppercase"
               >
                 {head}
               </th>
