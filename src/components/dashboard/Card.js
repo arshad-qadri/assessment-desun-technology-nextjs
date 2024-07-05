@@ -9,7 +9,7 @@ const Card = ({card}) => {
       </div>
       <div>
         <span className={`${textColor} font-semibold`}>{value}</span> <br />
-        <span className="text-gray-600">{text}</span>
+        <span className="text-gray-600 text-[14px]">{text}</span>
       </div>
     </div>
   );

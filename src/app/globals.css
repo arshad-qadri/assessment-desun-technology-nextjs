@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.dropdown .css-pm29xt-control {
+  height: 100%;
+}

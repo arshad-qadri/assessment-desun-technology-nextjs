@@ -8,6 +8,7 @@ import { GiNestEggs } from "react-icons/gi";
 import { LuBird } from "react-icons/lu";
 import { PiEggCrackLight, PiListPlus } from "react-icons/pi";
 import { FaChalkboardUser } from "react-icons/fa6";
+import TransferDetails from "@/components/dashboard/TransferDetails";
 
 export default function Home() {
   const [date, setData] = useState("");
@@ -55,28 +56,33 @@ export default function Home() {
         <span className="opacity-50">Egg Module</span>{" "}
         <span className="opacity-75"> / Dashboard</span>
       </div>
-      <div className="flex justify-between my-6">
+      <div className="flex justify-between items-center my-6">
         <h1 className="text-gray-600 text-2xl font-semibold tracking-wide">
           Current Stats
         </h1>
-        <div className="flex justify-center it gap-x-3">
-          <DatePicker
-            label={"From Date"}
-            value={date}
-            setValue={setData}
-            type={"date"}
-            id={"date-picker"}
-          />
+        <div className="flex justify-center items-center gap-x-3">
+          <div className=" min-w-40">
+            <DatePicker
+              label={"From Date"}
+              value={date}
+              setValue={setData}
+              type={"date"}
+              id={"date-picker"}
+            />
+          </div>
           <span className="flex justify-center items-center opacity-55">
             to
           </span>
-          <DatePicker
-            label={"Till Date"}
-            value={date}
-            setValue={setData}
-            type={"date"}
-            id={"date-picker"}
-          />
+          <div className=" min-w-40">
+            <DatePicker
+              label={"Till Date"}
+              value={date}
+              setValue={setData}
+              type={"date"}
+              id={"date-picker"}
+            />
+          </div>
+
           <Search />
         </div>
       </div>
@@ -86,6 +92,9 @@ export default function Home() {
         ))}
       </div>
       <TodaysCollections />
+      {/* ====== here table will be dynamic columns and data====== */}
+      <TransferDetails title={"Transfer Details"} />
+      <TransferDetails title={"Species"} />
     </div>
   );
 }

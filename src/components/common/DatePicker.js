@@ -16,10 +16,10 @@ const DatePicker = ({ label, value, setValue, type = "date", id }) => {
   };
 
   return (
-    <div className="">
+    <div className="h-11">
       <label
         htmlFor={id}
-        className="bg-white border border-gray-300 rounded-md py-2 px-4 min-w-40 text-sm flex justify-between items-center cursor-pointer"
+        className="h-full bg-white border border-gray-300 rounded-md py-3 px-4 w-full text-sm flex justify-between items-center cursor-pointer"
         onClick={handleLabelClick}
       >
         <span className="opacity-50">{value ? value : label}</span>

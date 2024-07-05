@@ -15,14 +15,14 @@ const TodaysCollections = () => {
       </h1>
       <div className="grid grid-cols-2 gap-x-3">
         <HorizontalBarChart />
-      <div className="grid grid-cols-2 grid-rows-2 p-4">
+      <div className="grid grid-cols-2 grid-rows-2 p-4 gap-x-2">
         {collections.map((collection, index) => (
           <div key={index} className="flex justify-center items-start flex-col">
             <div className="flex justify-center items-center gap-x-1">
               <div className={`w-3 h-3 ${collection.color} rounded-full`}></div>
               <div className="opacity-50">{collection.text}</div>
             </div>
-            <div className={`${collection.textColor}`}>{collection.value}</div>
+            <div className={`${collection.textColor} font-semibold`}>{collection.value}</div>
           </div>
         ))}
       </div>
