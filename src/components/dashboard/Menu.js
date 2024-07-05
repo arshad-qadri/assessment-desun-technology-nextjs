@@ -9,7 +9,6 @@ import Link from "next/link";
 
 const Menu = ({ toggle, setToggle }) => {
   const pathname = usePathname();
-  console.log("router", pathname);
   const menuList = [
     { Icon: GiApothecary, label: "Dashboard", to: "/" },
     { Icon: GiApothecary, label: "Nursery", to: "/#" },
@@ -37,9 +36,8 @@ const Menu = ({ toggle, setToggle }) => {
           )}
         </div>
       </div>
-      {/* #2b6672 */}
       {/* ============== menuList============ */}
-      <ul className={toggle ? "mt-12" : "mt-5"}>
+      <ul className={ "mt-20"}>
         {menuList.map((item, index) => {
           const { label, Icon, to } = item;
           return (
