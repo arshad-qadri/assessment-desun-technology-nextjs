@@ -9,7 +9,7 @@ const TodaysCollections = () => {
     { text: "Discarded", value: 33, color: "bg-[#fca08c]", textColor: "text-[#fca08c]"},
   ];
   return (
-    <div className="w-8/12 bg-white pb-4 pt-6 shadow-lg rounded-lg">
+    <div className="w-3/5 bg-white pb-4 pt-6 shadow-lg rounded-lg">
       <h1 className="text-2xl font-semibold text-gray-700 px-4">
         Todays collection - <span className="text-green-900">262 Eggs</span>
       </h1>

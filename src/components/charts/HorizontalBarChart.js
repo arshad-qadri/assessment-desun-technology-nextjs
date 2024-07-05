@@ -20,40 +20,52 @@ const HorizontalBarChart = () => {
       height: 350,
       type: "bar",
       toolbar: {
-        show: false, // Disable the download toolbar
+        show: false,
       },
     },
     plotOptions: {
       bar: {
         horizontal: true,
-        barHeight: "50%", // Decrease the bar height
-        borderRadius: 8, // Border radius for the right side
-        borderRadiusApplication: "end", // Apply radius to the right side only
-        distributed: true, // Ensure colors are applied to each bar individually
+        barHeight: "50%",
+        borderRadius: 8,
+        borderRadiusApplication: "end",
+        distributed: true,
       },
     },
-    colors: ["#4dc7e3", "#73d196", "#00d6c9", "#fca08c"], // Apply the specified colors
+    colors: ["#4dc7e3", "#73d196", "#00d6c9", "#fca08c"],
     xaxis: {
       labels: {
-        show: true, // Show the x-axis labels
+        show: true,
+      },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
       },
     },
     yaxis: {
       labels: {
-        show: false, // Hide the y-axis labels
+        show: false,
+      },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
       },
     },
     dataLabels: {
-      enabled: false, // Disable data labels
+      enabled: false,
     },
     legend: {
-      show: false, // Hide the legend
+      show: false,
     },
     grid: {
-      show: false, // Remove background grid lines
+      show: false,
     },
     tooltip: {
-      enabled: false, // Disable tooltips
+      enabled: false,
     },
   };
   return (
