@@ -1,8 +1,10 @@
 import React from "react";
 import Pagination from "../common/Pagination";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ReceivedTable = () => {
+  const {push} = useRouter()
   const headres = [
     "NO",
     "SPECIES",
@@ -124,7 +126,7 @@ const ReceivedTable = () => {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr className="py-4 border-b" key={index}>
+            <tr className="py-4 border-b cursor-pointer" key={index} onClick={()=>push(`/egg/egg-details/${index}`)}>
               <td className={`font-light ${thCommonClass}`}>{index + 1}</td>
               <td className={` ${thCommonClass}`}>
                 <div className="flex justify-center items-center gap-x-1">
