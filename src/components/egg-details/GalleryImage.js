@@ -10,6 +10,7 @@ const GalleryImage = ({title}) => {
           src={"https://static-cse.canva.com/blob/679944/lilac11.png"}
           width={320}
           height={150}
+          alt="image"
         />
       </div>
       <div>

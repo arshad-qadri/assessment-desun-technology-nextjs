@@ -85,7 +85,7 @@ const EggInfoHeader = () => {
             {/* card 2 */}
             <div className="bg-[#e7faf9] h-[90px] w-full rounded-md p-2 flex justify-start items-center gap-x-2">
               <div className=" bg-[#00d6c9] px-2 py-2 rounded-md flex justify-center items-center" >
-              <Image src={"/meter.png"} width={80} height={60} />
+              <Image src={"/meter.png"} width={80} height={60} alt="meter" />
               </div>
               <div className="flex justify-between items-center  w-full">
                 <div>
@@ -99,7 +99,7 @@ const EggInfoHeader = () => {
             <div className="bg-[#e7faf9] h-[90px] w-full rounded-md p-2 flex justify-start items-center gap-x-2">
               <div className=" bg-[#37bd69] px-2 py-2 rounded-md flex justify-center items-center h-[70px] w-[95px]" >
 
-                <Image src={"/egg.png"} width={70} height={60} />
+                <Image src={"/egg.png"} width={70} height={60} alt="Egg" />
               </div>
               <div className=" w-full">
                 <div>
