@@ -13,7 +13,7 @@ const Hero = ({ children }) => {
         <div className="opacity-65 cursor-pointer">
           <LuBellDot size={25} />
         </div>
-        <div>
+        <div className="relative">
           <Image
             className="rounded-full overflow-hidden border border-gray-500 cursor-pointer"
             src={"/user2.avif"}
@@ -21,6 +21,7 @@ const Hero = ({ children }) => {
             height={40}
             alt="Profile Image"
           />
+          <div className="w-3 h-3 rounded-full bg-green-500 absolute bottom-0 right-0 border-2 border-white"></div>
         </div>
       </div>
       {children}
