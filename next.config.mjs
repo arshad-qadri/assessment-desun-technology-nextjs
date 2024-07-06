@@ -12,6 +12,11 @@ const nextConfig = {
           hostname: "png.pngtree.com",
           pathname: "/**",
         },
+        {
+          protocol: "https",
+          hostname: "static-cse.canva.com",
+          pathname: "/**",
+        },
       ],
     },
   };

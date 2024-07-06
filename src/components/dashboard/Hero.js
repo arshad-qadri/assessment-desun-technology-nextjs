@@ -29,3 +29,4 @@ const Hero = ({ children }) => {
 };
 
 export default Hero;
+
