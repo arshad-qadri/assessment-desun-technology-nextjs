@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 
-const Dropdown = ({ placeholder }) => {
+const Dropdown = ({ placeholder,custClass }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleChange = (option) => {
@@ -38,7 +38,7 @@ const Dropdown = ({ placeholder }) => {
         onChange={handleChange}
         options={options}
         styles={customStyles}
-        className="text-sm cursor-pointer h-full"
+        className={`text-sm cursor-pointer h-full ${custClass}`}
         placeholder={placeholder}
       />
     </div>

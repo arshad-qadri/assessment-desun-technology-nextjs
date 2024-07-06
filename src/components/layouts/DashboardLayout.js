@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import Menu from "../dashboard/Menu";
 import Hero from "../dashboard/Hero";
-import OverlayWithPopup from "../common/OverLayWithPopup";
+import OverlayWithPopup from "../common/OverlayWithPopup";
+
 
 
 const DashboardLayout = ({ children }) => {
